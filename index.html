@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>educational website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- swiper css cdn  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    <!-- navigation -->
+    <nav>
+        <img src="images/bullet-g07c6cc28f_1280.png" alt="logo">
+        <div class="navigation">
+            <ul>
+                <i id="menu-close" class="fa-solid fa-xmark"></i>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Contact</a></li>
+                <button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'"
+                    style="width:auto;">Sign In</button>
+            </ul>
+
+            <i id="menu-btn" class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <div id='login-form' class='login-page'>
+        <div class="form-box">
+            <div class='button-box'>
+                <div id='btn'></div>
+                <button type='button' onclick='login()' class='toggle-btn'>Sign In</button>
+                <button type='button' onclick='register()' class='toggle-btn'>Sign Up</button>
+            </div>
+            <form id='login' class='input-group-login'>
+                <input type='text' class='input-field' placeholder='Email Id' required>
+                <input type='password' class='input-field' placeholder='Enter Password' required>
+                <input type='checkbox' class='check-box'><span>Remember Password</span>
+                <button type='submit' class='submit-btn'>Sign In</button>
+            </form>
+            <form id='register' class='input-group-register'>
+                <input type='text' class='input-field' placeholder='First Name' required>
+                <input type='text' class='input-field' placeholder='Last Name ' required>
+                <input type='email' class='input-field' placeholder='Email Id' required>
+                <input type='password' class='input-field' placeholder='Enter Password' required>
+                <input type='password' class='input-field' placeholder='Confirm Password' required>
+                <input type='checkbox' class='check-box'><span>I agree to the terms and conditions</span>
+                <button type='submit' class='submit-btn'>Sign Up</button>
+            </form>
+        </div>
+    </div>
+    </div>
+
+    <!-- home -->
+
+    <section class="home">
+        <div class=" swiper home-slider">
+            <div class="swiper-wrapper">
+                <section class="swiper-slide slide" style="background: url(images/1.jpg) no-repeat;">
+                    <div class="content">
+                        <h3>The best courses you will find here!</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum iure doloribus dolor, ipsa
+                            autem incidunt?
+                        </p>
+                        <a href="#" class="swipe-btn">get started</a>
+                    </div>
+                </section>
+
+                <section class="swiper-slide slide" style="background: url(images/2.jpg) no-repeat;">
+                    <div class="content">
+                        <h3>The best courses you will find here!</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum iure doloribus dolor, ipsa
+                            autem incidunt?
+                        </p>
+                        <a href="#" class="swipe-btn">get started</a>
+                    </div>
+                </section>
+
+                <section class="swiper-slide slide" style="background: url(images/3.jpg) no-repeat;">
+                    <div class="content">
+                        <h3>The best courses you will find here!</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum iure doloribus dolor, ipsa
+                            autem incidunt?
+                        </p>
+                        <a href="#" class="swipe-btn">get started</a>
+                    </div>
+                </section>
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+        </div>
+    </section>
+
+    <!-- features -->
+
+    <section id="features">
+        <h1>Awesome Features </h1>
+        <p>Replenish man have thing gathering lights yielding shall you </p>
+        <div class="fea-base">
+            <div class="fea-box">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <h3>Scholarship Facility</h3>
+                <p>One make creepeth, man bearing theira firmament won't great heaven</p>
+            </div>
+            <div class="fea-box">
+                <i class="fa-regular fa-file-certificate"></i>
+                <h3>Dell Online Course</h3>
+                <p>One make creepeth, man bearing theira firmament won't great heaven</p>
+            </div>
+            <div class="fea-box">
+                <i class="fa-solid fa-award"></i>
+                <h3>Global certification</h3>
+                <p>One make creepeth, man bearing theira firmament won't great heaven</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses  -->
+
+
+    <section id="course">
+        <h1>Our Popular Courses</h1>
+        <p>Replenish man have thing gathering lights yielding shall you </p>
+        <div class="course-box">
+
+            <div class="courses">
+                <img src="images/c1.png" alt="">
+                <div class="details">
+                    <span>updated 13/12/2022</span>
+                    <h6>JavaScript Beginner Courses</h6>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(519)</span>
+                    </div>
+                </div>
+                <div class="cost">
+                    $49.99
+                </div>
+            </div>
+
+            <div class="courses">
+                <img src="images/c2.png" alt="">
+                <div class="details">
+                    <span>updated 13/12/2022</span>
+                    <h6>JavaScript Beginner Courses</h6>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(519)</span>
+                    </div>
+                </div>
+                <div class="cost">
+                    $49.99
+                </div>
+            </div>
+
+            <div class="courses">
+                <img src="images/c3.png" alt="">
+                <div class="details">
+                    <span>updated 13/12/2022</span>
+                    <h6>JavaScript Beginner Courses</h6>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(519)</span>
+                    </div>
+                </div>
+                <div class="cost">
+                    $49.99
+                </div>
+            </div>
+
+            <div class="courses">
+                <img src="images/c1.png" alt="">
+                <div class="details">
+                    <span>updated 13/12/2022</span>
+                    <h6>JavaScript Beginner Courses</h6>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(519)</span>
+                    </div>
+                </div>
+                <div class="cost">
+                    $49.99
+                </div>
+            </div>
+
+            <div class="courses">
+                <img src="images/c2.png" alt="">
+                <div class="details">
+                    <span>updated 13/12/2022</span>
+                    <h6>JavaScript Beginner Courses</h6>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(519)</span>
+                    </div>
+                </div>
+                <div class="cost">
+                    $49.99
+                </div>
+            </div>
+
+            <div class="courses">
+                <img src="images/c3.png" alt="">
+                <div class="details">
+                    <span>updated 13/12/2022</span>
+                    <h6>JavaScript Beginner Courses</h6>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(519)</span>
+                    </div>
+                </div>
+                <div class="cost">
+                    $49.99
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- reistraiton  -->
+
+    <section id="registration">
+        <div class="reminder">
+            <p>Get 100 Online courses for free</p>
+            <h1>Register To Get It</h1>
+            <div class="time">
+                <div class="date">
+                    18 <br> Days
+                </div>
+                <div class="date">
+                    23 <br> Hours
+                </div>
+                <div class="date">
+                    06 <br> Minutes
+                </div>
+                <div class="date">
+                    58 <br> Seconds
+                </div>
+            </div>
+        </div>
+
+
+        <div class="form">
+            <h3>Create Free Account NOW!</h3>
+            <input type="text" placeholder="Name" name="" id="">
+            <input type="text" placeholder="Email Address" name="" id="">
+            <input type="text" placeholder="Phone Number" name="" id="">
+            <div class="btn">
+                <a class="yellow" href="#">Submit Form</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- profiles  -->
+
+    <section id="experts">
+        <h1>Community Experts</h1>
+        <p> Replemish man have thing gathering lights yielding shall you </p>
+        <div class="expert-box">
+            <div class="profile">
+                <img src="images/expert1.png" alt="">
+                <h6>Vishwajeet Trigun</h6>
+                <p>Python & Algorithm Expert</p>
+                <div class="pro-links">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-linkedin-in"></i>
+
+                </div>
+            </div>
+
+            <div class="profile">
+                <img src="images/expert2.png" alt="">
+                <h6>Karishma Singh</h6>
+                <p>Data Analysis Expert</p>
+                <div class="pro-links">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-linkedin-in"></i>
+
+                </div>
+            </div>
+
+            <div class="profile">
+                <img src="images/expert3.png" alt="">
+                <h6>Abhishek singh</h6>
+                <p>Full Stake Developer</p>
+                <div class="pro-links">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-linkedin-in"></i>
+
+                </div>
+            </div>
+
+            <div class="profile">
+                <img src="images/expert4.png" alt="">
+                <h6>Ankit Rajput</h6>
+                <p>Design Expert</p>
+                <div class="pro-links">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-linkedin-in"></i>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-col">
+            <h3>Company</h3>
+            <li>About Us</li>
+            <li>Careers</li>
+            <li>Privacy Policy</li>
+            <li>Contact Us</li>
+            <li>Terms of Service</li>
+        </div>
+
+        <div class="footer-col">
+            <h3>Learns</h3>
+            <li>Algorithm</li>
+            <li>Data Structure</li>
+            <li>Languages</li>
+            <li>Subjects</li>
+            <li>Video Tutorials</li>
+        </div>
+
+        <div class="footer-col">
+            <h3>Practice</h3>
+            <li>Courses</li>
+            <li>Company-wise</li>
+            <li>Topic-wise</li>
+            <li>How to begin</li>
+
+        </div>
+
+        <div class="footer-col">
+            <h3>Contribute</h3>
+            <li>Write an Article</li>
+            <li>Write Interview Experiences</li>
+            <li>Internship</li>
+            <li>Videos</li>
+        </div>
+
+
+
+        <div class="footer-col">
+            <h3>Newsletter</h3>
+            <p>You can trust us. we only send promo offers</p>
+            <div class="subscribe">
+                <input type="text" placeholder="Your Email Address">
+                <a class="yellow" href="#">SUBSCRIBE</a>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>copyright ©2022 all rights reserved </p>
+            <div class="pro-links">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin-in"></i>
+
+            </div>
+
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.2.js"
+        integrity="sha256-pkn2CUZmheSeyssYw3vMp1+xyub4m+e+QK4sQskvuo4=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
